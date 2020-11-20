@@ -1,0 +1,6 @@
+node_modules
+.srcjs
+package-lock.json
+lib
+spec
+.idea

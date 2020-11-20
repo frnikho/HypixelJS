@@ -1,0 +1,22 @@
+{
+  "name": "@frnikho/hypixel-js",
+  "version": "1.0.0",
+  "description": "Hypixel js bridge for nodejs",
+  "main": "index.js",
+  "scripts": {
+    "build" : "tsc",
+    "start": "node .srcjs/index.js",
+    "dev": "nodemon .srcjs/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nikho",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^3.6.3",
+    "nodemon": "^2.0.6",
+    "typescript": "^4.0.5"
+  },
+  "dependencies": {
+    "axios": "^0.21.0"
+  }
+}
