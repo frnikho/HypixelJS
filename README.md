@@ -2,6 +2,9 @@
 
 HypixelJS is a library build & create with typescript to provide an interface between the Hypixel API and javascript
 
+### status 
+Currently in development also work and can maybe contains errors and missing api methods
+
 ### Installation
 ```sh
 $ npm i @frnikho/hypixel-js
@@ -41,3 +44,7 @@ Player is online !
 | Name | LINK |
 | ------ | ------ |
 | Axios | https://www.npmjs.com/package/axios |
+
+### Source
+
+See on [Github](https://github.com/frnikho/HypixelJS)
