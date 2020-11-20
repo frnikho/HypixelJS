@@ -1,1 +1,1 @@
-module.exports = require('./src/Hypixel');
+module.exports = require('./src/Hypixel').Hypixel;
