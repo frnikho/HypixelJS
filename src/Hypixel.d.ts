@@ -1,4 +1,5 @@
 import { User } from "./User";
+import { Skyblock } from "./Skyblock";
 /**
  * Token Model Interface
  */
@@ -66,5 +67,9 @@ export declare class Hypixel {
      * @param callback (data) => void
      */
     getOnlinePlayersByGames(callback: (data: any) => void): void;
+    /**
+     * Get new Skyblock instance
+     */
+    getSkyblock(): Skyblock;
 }
 export {};

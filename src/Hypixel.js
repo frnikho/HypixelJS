@@ -39,6 +39,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Hypixel = void 0;
 var User_1 = require("./User");
 var axios_1 = require("axios");
+var Skyblock_1 = require("./Skyblock");
 /**
  * Hypixel Class
  * @constructor call init() after creating a new instance of Hypixel class
@@ -138,6 +139,13 @@ var Hypixel = /** @class */ (function () {
         axios_1.default.get("https://api.hypixel.net/gameCounts?key=" + ((_a = this.tokenData) === null || _a === void 0 ? void 0 : _a.key)).then(function (response) {
             callback(response.data);
         });
+    };
+    /**
+     * Get new Skyblock instance
+     */
+    Hypixel.prototype.getSkyblock = function () {
+        var _a;
+        return new Skyblock_1.Skyblock((_a = this.tokenData) === null || _a === void 0 ? void 0 : _a.key);
     };
     return Hypixel;
 }());

@@ -1,7 +1,7 @@
 {
   "name": "@frnikho/hypixel-js",
-  "version": "1.0.4",
-  "keywords": ["Hypixel", "Hypixel Api", "HypixelJS", "Nikho"],
+  "version": "1.0.6",
+  "keywords": ["Hypixel", "Hypixel Api", "HypixelJS", "Nikho", "Minecraft"],
   "repository": {
     "url": "https://github.com/frnikho/HypixelJS"
   },
