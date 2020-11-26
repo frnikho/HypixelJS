@@ -33,6 +33,22 @@ export declare class User implements UserModel {
     lastLogin: number;
     networkExp: number;
     constructor(uuid: string, data: any);
-    getFriends(token: string, callback: (friends: FriendModel[], error: any) => void): Promise<void>;
-    isOnline(token: string, callback: (online: boolean, data: any, error: any) => void): Promise<void>;
+    /**
+     * Get Player's friends
+     * @param token Hypixel Token
+     * @param callback (friends: FriendModel[], error) => void
+     */
+    getFriends(token: string, callback: (friends: FriendModel[], error: any) => void): void;
+    /**
+     * Return true if player is online
+     * @param token Hypixel Token
+     * @param callback (online: boollean, error) => void
+     */
+    isOnline(token: string, callback: (online: boolean, data: any, error: any) => void): void;
+    /**
+     * Get Recent Games
+     * @param token Hypixel Token
+     * @param callback (recentGames, error) => void
+     */
+    getRecentGames(token: string, callback: (recentGames: any, error?: any) => void): void;
 }

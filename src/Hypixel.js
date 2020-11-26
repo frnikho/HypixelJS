@@ -141,6 +141,18 @@ var Hypixel = /** @class */ (function () {
         });
     };
     /**
+     * Get Leaderboards
+     * @param callback (leaderboards, error) => void
+     */
+    Hypixel.prototype.getLeaderboards = function (callback) {
+        var _a;
+        axios_1.default.get("https://api.hypixel.net/leaderboards?key=" + ((_a = this.tokenData) === null || _a === void 0 ? void 0 : _a.key)).then(function (response) {
+            callback(response.data);
+        }).catch(function (err) {
+            callback(null, err);
+        });
+    };
+    /**
      * Get new Skyblock instance
      */
     Hypixel.prototype.getSkyblock = function () {

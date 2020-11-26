@@ -68,6 +68,11 @@ export declare class Hypixel {
      */
     getOnlinePlayersByGames(callback: (data: any) => void): void;
     /**
+     * Get Leaderboards
+     * @param callback (leaderboards, error) => void
+     */
+    getLeaderboards(callback: (leaderboards: any, error?: any) => void): void;
+    /**
      * Get new Skyblock instance
      */
     getSkyblock(): Skyblock;
